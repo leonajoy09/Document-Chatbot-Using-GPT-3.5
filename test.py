@@ -2,7 +2,6 @@ import os
 import openai
 
 # Set up OpenAI API key
-# Replace with your actual OpenAI API key
 openai.api_key = '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'
 
 # Function to read text from all .txt files in the "documents" folder
