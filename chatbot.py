@@ -1,9 +1,12 @@
 import requests
 import PyPDF2
 import openai
+import os
 
 # OpenAI API key
-openai.api_key = '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'
+openai_api_key = os.getenv("OPENAI_API_KEY")
+llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=openai_api_key)
+
 
 # Function to download and extract text content from the document
 
